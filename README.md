@@ -2,8 +2,8 @@
 
 ## Step 1 - Climate Analysis and Exploration
 
-Python, SQLAlchemy ORM queries, Pandas and Matplotlib libraries were used to do basic climate analysis and data 
-exploration of a SQLite [climate database](Resources/). This step is divided in:
+__Python, SQLAlchemy ORM queries, Pandas and Matplotlib libraries__ were used to do basic climate analysis and data 
+exploration of a __SQLite__ [climate database](Resources/). This step is divided in:
 
 
  - Precipitation Analysis. Contains a query to retrieve the last 12 months of precipitation data, a plot with the 
@@ -38,7 +38,7 @@ To generate the results of Step 1 go to the [Jupyter Notebook](Notebook/climate.
 
 ## Step 2 - Climate Application
 
-Based on the queries developed in Step 1, a Flask API  was designed. The following routes were created:
+Based on the queries developed in Step 1, a __Flask__ API was designed. The following routes were created:
 
  - `/`. __Home page__. Lists all routes that are available.
 
