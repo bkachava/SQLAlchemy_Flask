@@ -51,12 +51,12 @@ Based on the queries developed in Step 1, a Flask API  was designed. The followi
  the last data point. Returns a JSON list of Temperature Observations (tobs) for the previous year.
  
  - `/api/v1.0/<start>`. __Temperature - Start date__. Returns a JSON list of the minimum temperature, the average 
- temperature, and the max temperature for a given start date. Calculates TMIN, TAVG, and TMAX for  all dates greater 
+ temperature, and the max temperature for a given start date. Calculates these values for all dates greater 
  than and equal to the start date.
  
- - `/api/v1.0/<start>/<end>`. __Temperature - Start/End dates__ Returns a JSON list of the minimum temperature, 
- the average temperature, and the max temperature for a given start-end range. Calculates the TMIN, TAVG, and 
- TMAX for dates between the start and end date inclusive.
+ - `/api/v1.0/<start>/<end>`. __Temperature - Start/End dates__. Returns a JSON list of the minimum temperature, 
+ the average temperature, and the max temperature for a given start-end range. Calculates these values for dates 
+ between the start and end date inclusive.
 
 
 ### Results - Step 2
