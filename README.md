@@ -40,19 +40,22 @@ To generate the results of Step 1 go to the [Jupyter Notebook](Notebook/climate.
 
 Based on the queries developed in Step 1, a Flask API  was designed. The following routes were created:
 
- - `/`. Home page. List all routes that are available.
+ - `/`. __Home page__. Lists all routes that are available.
 
- - `/api/v1.0/precipitation`. Converts the query results to a Python Dictionary using date as the key and prcp as the
- value. Returns the JSON representation of the dictionary.
+ - `/api/v1.0/precipitation`. __Precitipation data__. Converts the query results to a Python Dictionary using date
+ as the key and prcp as the value. Returns the JSON representation of the dictionary.
 
- - `/api/v1.0/stations`. Retursn a JSON list of stations from the dataset.
+ - `/api/v1.0/stations`. __Stations__. Returns a JSON list of stations from the dataset.
 
- - `/api/v1.0/tobs`. Query for the dates and temperature observations from a year from the last data point. Returns a
- JSON list of Temperature Observations (tobs) for the previous year.
+ - `/api/v1.0/tobs`. __Temperature data__. Query for the dates and temperature observations from a year from 
+ the last data point. Returns a JSON list of Temperature Observations (tobs) for the previous year.
  
- - `/api/v1.0/<start> and /api/v1.0/<start>/<end>`. Returns a JSON list of the minimum temperature, the average temperature, 
- and the max temperature for a given start or start-end range. When given the start only, calculate TMIN, TAVG, and TMAX for 
- all dates greater than and equal to the start date. When given the start and the end date, calculate the TMIN, TAVG, and 
+ - `/api/v1.0/<start>`. __Temperature - Start date__. Returns a JSON list of the minimum temperature, the average 
+ temperature, and the max temperature for a given start date. Calculates TMIN, TAVG, and TMAX for  all dates greater 
+ than and equal to the start date.
+ 
+ - `/api/v1.0/<start>/<end>`. __Temperature - Start/End dates__ Returns a JSON list of the minimum temperature, 
+ the average temperature, and the max temperature for a given start-end range. Calculates the TMIN, TAVG, and 
  TMAX for dates between the start and end date inclusive.
 
 
